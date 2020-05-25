@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>AngularChatWebComponent</title>
+    <base href="/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+    <button onclick="addElement()">Click to add custom element</button>
+    <script>
+      function addElement() {
+        const e = document.createElement("app-chat");
+        document.body.appendChild(e);
+      }
+    </script>
+    <script src="../dist/elements/es2015-chat.js" type="module"></script>
+    <script src="../dist/elements/es5-chat.js" nomodule defer></script>
+  </body>
+</html>
