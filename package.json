@@ -6,7 +6,7 @@
     "start": "ng serve",
     "build": "ng build",
     "build:elements": "ng build --prod --output-hashing none --outputPath=dist && node build-helpers/build-elements.js ",
-    "launch:demo": "node build-helpers/copy-built-js.js && npx http-server -o",
+    "launch:demo": "node build-helpers/copy-built-js.js && npx http-server ./demo -o",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",

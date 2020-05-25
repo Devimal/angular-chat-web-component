@@ -3,7 +3,7 @@
 const fs = require(`fs-extra`);
 const path = require(`path`);
 
-const DIST_PATH = path.resolve(__dirname, `../dist`);
+const DIST_PATH = path.resolve(__dirname, `../dist`, 'elements');
 const DEMO_PATH = path.resolve(__dirname, `../demo`);
 
 const distFiles = fs.readdirSync(`${DIST_PATH}`);
