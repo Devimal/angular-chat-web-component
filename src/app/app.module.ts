@@ -28,7 +28,6 @@ export class AppModule implements DoBootstrap {
 
   ngDoBootstrap() {
     this.registerCustomElement();
-    this.loadStyles();
   }
 
   registerCustomElement() {
@@ -38,12 +37,5 @@ export class AppModule implements DoBootstrap {
     });
     // Register the custom element with the browser.
     customElements.define('app-chat', ChatElement);
-  }
-
-  loadStyles() {
-    const styleElement = document.createElement('link');
-    styleElement.setAttribute('rel', 'stylesheet');
-    styleElement.setAttribute('href', 'styles.css');
-    document.head.appendChild(styleElement);
   }
 }
